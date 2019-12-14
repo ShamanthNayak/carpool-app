@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+    text-decoration: none;
+}
+
+.banner {
+    font-family: "Lobster";
+    font-size: 32px;
+    color: #fff;
+    margin: 0 40px;
+    text-decoration: none;
+}
+
+.banner:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ad-container {
+    margin-top: 20px;
+    text-align: center;
+    width: 840px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.route {
+    background: #32be8f;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.ad-details {
+    display:inline-block;
+    margin: 16px 32px;
+}
+
+.name {
+    font-size: 32px;
+    color: #3C3C3C;
+}
+
+.vehicle-details {
+    font-size: 22px;
+    color: #3C3C3C;
+    padding: 8px 0px;
+
+}
+
+.time-details {
+    font-size: 16px;
+    color: #747474;
+    padding: 8px 0px;
+}
+
+.book-btn {
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background: #32be8f;
+    color: white;
+    margin: 16px 10px;
+    padding: 10px 12px;
+    transition: .3s;
+}
+
+.book-btn:hover {
+    background: #219B72;
+}

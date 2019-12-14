@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Lobster:400,800');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+}
+
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -100;
+}
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.img img{
+	width: 500px;
+}
+
+.container{
+    width: 100vw;
+    height: 90vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+.banner {
+	font-family: "Lobster";
+	font-size: 3rem;	
+	color: white;
+	margin: 5% 4%;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.container-box {
+    background: #fff;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	margin: 120px 0;
+	height: 420px;
+	width: 720px;
+	border: 1px solid #E2E2E2;
+}
+
+.form-container form {
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-container input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #38d39f;
+	/* background: #38d39f; */
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+	padding: 12px 45px;
+	margin: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	transition: .5s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+	background-position: right;
+}
+
+button.ghost {
+    background: transparent;
+    border-color: #fff;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 10;
+}
+
+.overlay {
+    background: linear-gradient(to right, #38d39f, #00FFA9) no-repeat 0 0 / cover;
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+/* animation */
+
+/* move signin to right */
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+/* move overlay to left */
+.container-box.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+/* bring signup over signin */
+.container-box.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+/* move overlay back to the right */
+.container-box.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.container-box.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.container-box.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}

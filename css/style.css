@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+.item-link {
+    color: #3C3C3C;
+    text-decoration: none;
+}
+
+.item-link:hover {
+    text-decoration: none;
+    color: #32be8f;
+}
+
+.banner {
+    font-family: "Lobster";
+    font-size: 32px;
+    color: #fff;
+    margin: 0 40px;
+    text-decoration: none;
+}
+
+.banner:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+.search {
+    height: 52px;
+    border: none;
+    outline: none;
+    margin: 18px 6px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    transition: 0.2s;
+}
+
+.search:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search::placeholder {
+    text-align: center;
+    opacity: 65%;
+    font-family: 'Montserrat';
+}
+
+.search-btn {
+    border: none;
+    outline: none;
+    height: 48px;
+    width: 50px;
+    border-radius: 50px;
+    background: #32be8f;
+}
+
+.item {
+    font-family: "Montserrat";
+    width: 420px;
+    padding: 12px 18px;
+    margin: 22px 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.route {
+    font-size: 30px;
+    color: #32be8f;
+}
+
+.ad-name {
+    font-size: 20px;
+}
+
+.ad-time {
+    opacity: 80%;
+    color: #7B7B7B;
+}
+
+.vehicle-row {
+    display: block;
+}
+
+.vehicle-icon {
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.vehicle-name {
+    margin-left: 20px;
+    margin-bottom: 16px;
+
+}
